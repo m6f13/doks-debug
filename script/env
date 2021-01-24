@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 set -euo pipefail
-export DOCKER_REPO="digitalocean/doks-debug"
+# export DOCKER_REPO="digitalocean/doks-debug"
+export DOCKER_REPO="m6f13/doks-debug"

@@ -24,7 +24,8 @@ RUN apt-get update -qq && \
                        net-tools \
                        netcat \
                        iproute2 \
-                       strace
+                       strace \
+                       httping
 
 RUN curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add - && \
     add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" && \
