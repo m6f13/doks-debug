@@ -23,7 +23,7 @@ spec:
       - name: doks-debug
         securityContext:
           privileged: true
-        image: digitalocean/doks-debug:latest
+        image: m6f13/doks-debug:latest
         command: [ "sleep", "infinity" ]
         resources:
           requests:

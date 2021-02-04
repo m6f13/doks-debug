@@ -25,11 +25,11 @@ RUN apt-get update -qq && \
                        netcat \
                        iproute2 \
                        strace \
-                       httping
-
-RUN curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add - && \
-    add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" && \
-    apt-get update -qq && \
-    apt-get install -y docker-ce
+                       httping \
+                       tcptraceroute
+# RUN curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add - && \
+#    add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" && \
+#    apt-get update -qq && \
+#    apt-get install -y docker-ce
 
 CMD [ "/bin/bash" ]
