@@ -10,6 +10,8 @@ RUN apt-get update -qq && \
                        man \
                        manpages-posix \
                        man-db \
+                       openssh-client \
+                       lynx \
                        vim \
                        screen \
                        curl \
